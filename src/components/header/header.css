@@ -1,0 +1,30 @@
+.header {
+   background-color: #0c64e811;
+   color:  rgba(13, 73, 193, 0.841);
+   display: flex;
+   justify-content:space-between;
+   align-items: center;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 1000; 
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.filter{
+    border-radius: 100px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    height: 45px;
+    width: 600px;
+    font-size: large;
+    padding-right: 20px;
+}
+
+.filter:hover{
+    background-color: rgb(255, 255, 255);
+} 
+.icon-setting{
+    color:  rgba(13, 73, 193, 0.841);
+}

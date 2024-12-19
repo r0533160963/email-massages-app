@@ -1,0 +1,30 @@
+/* עיצוב כללי של העמוד */
+.email-page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  transition: all 0.3s ease-in-out;
+}
+
+/* מצב ברירת מחדל: רשימת מיילים תופסת את כל הגובה */
+.full-view .email-list-container {
+  flex: 1;
+}
+
+.full-view .email-view-container {
+  display: none;
+}
+
+/* מצב עם מייל נבחר: חלוקה לשני חלקים */
+.split-view .email-list-container {
+  flex: 0.5;
+  overflow-y: auto;
+}
+
+.split-view .email-view-container {
+  flex: 0.5;
+  /* border-top: 1px solid #ccc; */
+  overflow-y: auto;
+  background-color: #f9f9f9;
+  margin: 20px;
+}

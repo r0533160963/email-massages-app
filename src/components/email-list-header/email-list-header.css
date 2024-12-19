@@ -1,0 +1,48 @@
+.header-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    padding-top: 80px; /* גובה זהה לגובה ה-`header` */
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    width: 100%;
+}
+
+.icon-button-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-left: 15px;
+}
+
+.last-next-page{
+    color: rgba(174, 175, 176, 0.69);
+}
+
+.custom-tabs{
+    display: flex;
+    gap: 10px; 
+    position: fixed;
+    top: 130px; /*מתחת ל-header*/
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* מוסיף הצללה */
+}
+
+.custom-tabs .custom-tab{
+    font-weight: bold; 
+    width: 200px;
+    padding: 15px 0;
+} 
+
+.custom-tab.active {
+   color:  rgba(13, 73, 193, 0.841);
+    font-weight: bold;
+    border-radius: 0%;
+    border-bottom: 3px solid rgba(13, 73, 193, 0.841);
+}
+  
+.custom-tabs .custom-tab .icon-tab{
+    margin-right: 5px;
+} 
