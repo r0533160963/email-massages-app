@@ -1,0 +1,45 @@
+.signup-container {
+    padding: 24px;
+    text-align: center;
+    width: 400px;
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  .signup-title {
+    margin-bottom: 24px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .signup-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .signup-button {
+    margin-top: 16px;
+    background-color: #1976d2;
+    color: white;
+  }
+  
+  .signup-button:hover {
+    background-color: #115293;
+  }
+  
+  .signup-cancel-button {
+    margin-top: 16px;
+    color: #1976d2;
+    border-color: #1976d2;
+  }
+  
+  .signup-cancel-button:hover {
+    background-color: rgba(25, 118, 210, 0.08);
+  }
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }

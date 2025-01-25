@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import { Email } from "../../types/email";
-import emailStore from "../email-store/email-store";
+import emailStore from "../store/email-store/email-store";
 import "./email-view.css";
 import { Button } from "@mui/material";
 import DOMPurify from "dompurify";

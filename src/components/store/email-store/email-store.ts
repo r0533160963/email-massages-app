@@ -1,6 +1,6 @@
 import { observable, action, makeObservable, runInAction } from "mobx";
-import emailsService from "../email-service/email-service"; // ודא שהשירות מחזיר את הטיפוס המתאים
-import { Email } from "../../types/email";
+import emailsService from "../../service/email-service/email-service"; // ודא שהשירות מחזיר את הטיפוס המתאים
+import { Email } from "../../../types/email";
 
 class EmailStore {
   emails: Email[] = []; // מערך המיילים שנמשכים מהשרת

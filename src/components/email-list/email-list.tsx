@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { observer } from "mobx-react-lite";
 import EmailListHeader from "../email-list-header/email-list-header";
-import emailStore from "../email-store/email-store";
+import emailStore from "../store/email-store/email-store";
 import { Email } from "../../types/email";
 import "./email-list.css";
 

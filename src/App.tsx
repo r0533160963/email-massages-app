@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import "./App.css";
-import EmailList from "../src/components/email-list/email-list";
-import EmailView from "../src/components/email-view/email-view";
-import Sidebar from "../src/components/sidebar/sidebar";
 import Header from "../src/components/header/header";
 import { Email } from "./types/email";
-import EmailPage from "./components/email-page/email-page";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import LoginPage from "./components/login-page/login-page";
+import EmailHome from "./components/email-home/email-home";
 
 const mockEmails: Email[] = [];
 
@@ -32,22 +31,20 @@ const App: React.FC = () => {
 
   return (
     <div className="app">
-      <Header onSearch={handleSearch} />
+      {/* <Header onSearch={handleSearch} /> */}
       <div className="main-content">
         {/* <Sidebar /> */}
         <div className="email-section">
-          {/* <EmailList
-            onSelectEmail={handleSelectEmail}
-            searchQuery={searchQuery}
-          /> */}
-          <EmailPage/>
-          {/* <EmailView
-            email={selectedEmail}
-            onClose={() => setSelectedEmailId(null)}
-          /> */}
+          <Router>
+            <Routes>
+              <Route path="/" element={<LoginPage />} />
+              <Route path="/home/:userId" element={<EmailHome />} />
+            </Routes>
+          </Router>
         </div>
       </div>
     </div>
+
   );
 };
 

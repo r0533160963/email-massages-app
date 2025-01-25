@@ -1,5 +1,5 @@
 import axios from "axios";
-import { Email } from "../../types/email";
+import { Email } from "../../../types/email";
 
 // Axios instance setup
 const axiosInstance = axios.create({

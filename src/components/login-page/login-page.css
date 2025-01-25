@@ -1,0 +1,54 @@
+    .login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;    
+  }
+  /* מבנה הקומפוננטה */
+  .login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+    text-align: center;
+  }
+  
+ .login-container .login-header {
+    padding: 20px;
+  }
+  
+ .login-container .login-title {
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+  }
+  
+ .login-container .login-subtitle {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0 0;
+  }
+  
+ .login-container .login-form {
+    margin-bottom: 20px;
+  }
+  
+  /* כפתורים */
+ .login-container .login-button {
+    margin-top: 20px;
+  }
+  
+ .login-container .google-login-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+ 
+ .login-container .to-login {
+    font-size: 14px;
+    color: rgb(97, 96, 96);
+  }
