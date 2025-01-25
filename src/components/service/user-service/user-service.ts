@@ -1,6 +1,6 @@
 import { User } from "../../../types/user";
 
-const BASE_URL = "http://localhost:4000/api/users";
+const BASE_URL = "https://email-massages-api.onrender.com/api/users";
 
 const getUsers = async (): Promise<User[]> => {
   const response = await fetch(`${BASE_URL}`);
