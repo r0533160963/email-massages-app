@@ -3,7 +3,7 @@ import { Email } from "../../../types/email";
 
 // Axios instance setup
 const axiosInstance = axios.create({
-  baseURL: "http://localhost:4000/api/gmail",
+  baseURL: "https://email-massages-api.onrender.com/api/gmail",
   timeout: 10000,
   headers: {
     "Content-Type": "application/json",
