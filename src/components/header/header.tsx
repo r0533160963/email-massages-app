@@ -27,7 +27,7 @@ const Header: React.FC<HeaderProps> = ({ onSearch }) => {
   }, []);
 
 
-  const googleLoginUrl = `https://accounts.google.com/o/oauth2/v2/auth?client_id=158031050764-e27op69lc9fh0jrdij03nf16n22r6id2.apps.googleusercontent.com&redirect_uri=http://localhost:1000/api/gmail/callback&response_type=code&scope=https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid https://www.googleapis.com/auth/gmail.readonly&include_granted_scopes=true&state=`;
+  const googleLoginUrl = `https://accounts.google.com/o/oauth2/v2/auth?client_id=158031050764-e27op69lc9fh0jrdij03nf16n22r6id2.apps.googleusercontent.com&redirect_uri=https://email-massages-api.onrender.com/api/gmail/callback&response_type=code&scope=https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid https://www.googleapis.com/auth/gmail.readonly&include_granted_scopes=true&state=`;
 
   const handleToUrl = () => {
     const popup = window.open(googleLoginUrl, "_blank", "width=500,height=600");
